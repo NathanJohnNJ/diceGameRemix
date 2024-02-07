@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <a href="https://www.njtd.xyz"><img src={logo} className="App-logo" alt="logo" /></a>
         <div className="welcome" id="welcome">
           <h1>NJ Codes Proudly Presents...</h1>
         </div>

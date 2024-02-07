@@ -17,7 +17,8 @@
 }
 .diceBtns{
     width: 100%;
-    height: 100%;
+    height: 150%;
+    margin-top: 20px;
     grid-row: 4/5;
     grid-column: 1/6;
     display: flex;
@@ -25,25 +26,71 @@
     align-items: center;
     justify-content: space-evenly;
     background-color: #282c34;
-    border-radius:12px;
-}
-.btn{
-    min-width: 105px;
-    height: 50px;
-    font-family: 'Righteous', cursive;
-    font-size: 15px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    color: white;
-    background-color:rgb(10, 142, 10);
-    margin-bottom: 5%;
 }
-.btn:hover{
-    color:rgb(10, 142, 10);
-    background-color: rgb(0, 0, 0);
-    text-shadow: -3px 2px 5px rgb(158, 181, 146);
-}
+
 .dice{
     width: 12vmax;
     height:12vmax;
+}
+.rulesModal{
+    background-color:#a4a6a8;
+    width: 80vw;
+    height: 60vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.rules{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+}
+.xBtn{
+    display: flex;
+    align-self: flex-end;
+    color:rgb(10, 142, 10);
+    font-size: 28px;
+    font-family: 'Luckiest Guy', cursive;
+    background-color: #282c34;
+    border-radius: 50%;
+    padding-top:10px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: -4px;
+    text-align: center;
+    text-justify: center;
+    border-color:#c4c6c8;
+    border-style: solid;
+    border-width:2px;
+}
+.xBtn:hover{
+    border-color:rgb(10, 142, 10);
+    color:#c4c6c8;
+}
+.rulesTitle{
+    color: rgb(18, 97, 18);
+    font-size: 30px;
+    text-shadow: 5px 2px 5px black;
+    font-family: 'Luckiest Guy', cursive;
+}
+.rulesList{
+    list-style-position: inside;
+    list-style-image: url('./images/miniDice.png');
+    font-size: 17px;
+    line-height: 25px;
+}
+.rulesList p{
+    margin-left:-35px;
+    color:rgb(10, 142, 10);
+    font-size: 28px;
+    font-family: 'Luckiest Guy', cursive;
+    text-shadow: 5px 2px 5px black;
 }

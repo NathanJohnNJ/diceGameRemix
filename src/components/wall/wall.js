@@ -1,6 +1,7 @@
 import bottle1 from './images/1.png';
 import bottle2 from './images/2.png';
 import bottle3 from './images/3.png';
+import wobble from './images/wobble.gif';
 import './wall.css';
 
 const Wall = (props) => {
@@ -20,8 +21,8 @@ const Wall = (props) => {
 
     function addBottles(){
         for(let i=0; i<props.bottles; i++){
-            const sources = [bottle1, bottle2, bottle3]
-            const num = Math.floor(Math.random()*3)
+            const sources = [bottle1, bottle2, bottle3, wobble]
+            const num = Math.floor(Math.random()*4)
             const imgSrc = sources[num]
             x += 12
             const image = document.createElement("img")

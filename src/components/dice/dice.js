@@ -67,17 +67,18 @@ const Dice = (props) => {
                     ariaHideApp={false}
                     onRequestClose={closeModal}
                     contentLabel="Rules"
+                    className="rulesModal"
                 >
                     <div className="rules" id="rules">
-                        <h1 className="rulesTitle">How to play:</h1>
                         <button value="X" className="xBtn" onClick={closeModal}>X</button>
-                        <ul>
+                        <h1 className="rulesTitle">How to play:</h1>
+                        <ul className="rulesList">
                             <li>Click the 'Roll Dice' button to roll the dice</li>
                             <li>Your score will be represented by how many green bottles are standing on the wall</li>
                             <li>Keep clicking, rolling, and stacking those bottles</li>
                             <li>If you roll a 1, 1 green bottle will fall, causing all the others to smash and you will have to start again</li>
                             <li>You can also hit the 'Reset' button at any time to start again</li>
-                            <li>Once you have reached 20 bottles...YOU'RE A WINNER, BABY!</li>
+                            <li>Once you have reached 20 bottles...<p>YOU'RE A WINNER, BABY!</p></li>
                         </ul>
                     </div> 
                 </Modal>
