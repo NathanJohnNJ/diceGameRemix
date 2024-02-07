@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import logo from './images/logo.gif';
 import './App.css';
+import Game from './components/game';
+import Footer from './components/footer'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className="welcome" id="welcome">
+          <h1>NJ Codes Proudly Presents...</h1>
+        </div>
+        <div className="title" id="title">
+          <h2 id="titleText">The Green Bottles Dice Game</h2>
+        </div>
       </header>
+      <div className="AppGame">
+        <Game/>
+      </div>
+      <div className="AppFooter">
+        <Footer />
+      </div>
     </div>
   );
 }
