@@ -6,6 +6,8 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, 1fr);
+    position:absolute;
+    bottom:0
   }
   .footerImgDiv{
     grid-column-start: 1;
@@ -16,7 +18,7 @@
   }
   .footerLogo{
     width: 90px;
-    height: 90px ;
+    height: 90px;
   }
   .footerText{
     grid-column-start: 2;

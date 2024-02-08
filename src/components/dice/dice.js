@@ -58,6 +58,8 @@ const Dice = (props) => {
     return(
         <div className="diceDiv">
             <div className="diceArea" id="diceArea"></div>
+            {(props.showButtons)
+            ?
             <div className="diceBtns">
                 <button className="btn" onClick={()=>{roll()}}>Roll Dice</button>
                 <button className="btn" onClick={()=>{reset()}}>Reset</button>
@@ -83,6 +85,9 @@ const Dice = (props) => {
                     </div> 
                 </Modal>
             </div>
+            :
+            <></>
+            }
 
         </div>
     )

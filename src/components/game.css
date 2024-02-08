@@ -27,11 +27,27 @@
     background-color: rgb(0, 0, 0);
     text-shadow: -3px 2px 5px rgb(158, 181, 146);
 }
-.endGame{
+.endGame, #modalContent.endGame{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.endGameTitle{
+    color: rgb(18, 97, 18);
+    font-size: 50px;
+    text-shadow: 5px 2px 5px black;
+    font-family: 'Luckiest Guy', cursive;
+}
+p.endGameText{
+    font-weight:800;
+}
+a.endGameLink{
+    text-decoration: none;
+    color:rgb(10, 142, 10);
+}
+a.endGameLink:hover{
+    color: rgb(18, 97, 18);
 }
 .endGameBtns{
     width: 60%;
@@ -40,6 +56,67 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #282c34;
 }
 
+/*******START MODAL*******/
+.startModalModal{   
+    background-color: #282c34;
+}
+.startModal{
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+.welcome{
+    color: rgb(18, 97, 18);
+    font-size: 25px;
+    animation: 5s modalFontSize forwards ease-in;
+    display: block;
+    font-family: 'Righteous', cursive;
+  }
+.startModalRow{
+    display:flex;
+}
+.startLogo{
+    width: 15vw;
+    height: 15vw;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.startModalTitle{
+    margin-top: -4vh;
+    animation: 5s modalFontSizeBig forwards ease-in;
+    color: rgb(57, 123, 57);
+    text-shadow: 5px 2px 5px black;
+    width: 100%;
+    font-family: 'Luckiest Guy', cursive;
+}
+.startModalBtns{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+@keyframes modalFontSize{
+    from {
+      font-size: 25px
+    }
+    to {
+      font-size: 8px
+    }
+  }
+  @keyframes modalFontSizeBig{
+    from {
+      font-size: 8px;
+      opacity: 0;
+    }
+    to {
+      font-size: 40px;
+      opacity: 1;
+    }
+  }

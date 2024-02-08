@@ -1,11 +1,15 @@
 import logo from './images/logo.gif';
 import './App.css';
 import Game from './components/game';
-import Footer from './components/footer'
+import Footer from './components/footer';
+import StartModal from './components/startModal';
+import { useState } from 'react';
 
 function App() {
+  const [showButtons, setShowButtons] = useState(false)
   return (
     <div className="App">
+      <StartModal setShowButtons={setShowButtons} />
       <header className="App-header">
       <a href="https://www.njtd.xyz"><img src={logo} className="App-logo" alt="logo" /></a>
         <div className="welcome" id="welcome">
@@ -16,7 +20,7 @@ function App() {
         </div>
       </header>
       <div className="AppGame">
-        <Game/>
+        <Game showButtons={showButtons}/>
       </div>
       <div className="AppFooter">
         <Footer />

@@ -17,6 +17,7 @@
 }
 .diceBtns{
     width: 100%;
+    min-width:350px;
     height: 150%;
     margin-top: 20px;
     grid-row: 4/5;
@@ -28,6 +29,7 @@
     background-color: #282c34;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    animation: 3s slideUp forwards linear;
 }
 
 .dice{
@@ -94,3 +96,14 @@
     font-family: 'Luckiest Guy', cursive;
     text-shadow: 5px 2px 5px black;
 }
+
+@keyframes slideUp{
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
