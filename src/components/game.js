@@ -6,6 +6,7 @@ import Modal from 'react-modal';
 
 const Game = (props) => {
     const [bottles, setBottles] = useState(0);
+    const [broken, setBroken] = useState(false);
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [modalTitle, setModalTitle] = useState('')
     function closeModal(){
@@ -20,11 +21,15 @@ const Game = (props) => {
         while (bottleArea.hasChildNodes())
         bottleArea.firstChild.remove()
         setBottles(0)
+        setBroken(false)
     }
     function gameOver(){
+        setBroken(true)
         setModalTitle('!! GAME OVER !!')
-        setModalIsOpen(true)
-    }
+        setTimeout(()=>{
+            setModalIsOpen(true)
+        }, 3000)
+     }
     function winner(){
         setModalTitle('CONGRATULATIONS! YOU WON!')
         setModalIsOpen(true)
@@ -37,6 +42,7 @@ const Game = (props) => {
         while (bottleArea.hasChildNodes())
         bottleArea.firstChild.remove()
         setBottles(0)
+        setBroken(false)
         const modal = document.getElementById("modalContent")
         modal.innerHTML=`<div class="endGame">
         <h1 class="endGameTitle">!! Thanks for playing !!</h1>
@@ -47,7 +53,7 @@ const Game = (props) => {
     return(
         <div className="gameDiv">
             <div className="gameWall">
-                <Wall bottles={bottles} winner={winner}/>
+                <Wall bottles={bottles} winner={winner} broken={broken}/>
             </div>
             <div className="gameDice">
                 <Dice bottles={bottles} setBottles={setBottles} gameOver={gameOver} showButtons={props.showButtons}/>

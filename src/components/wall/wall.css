@@ -32,3 +32,8 @@
     height: 60px;
     transform: translateY(-50%)
 }
+.smash{
+    width: 60px;
+    height: 15px;
+    transform: translateY(30%)
+}
