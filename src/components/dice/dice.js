@@ -52,45 +52,36 @@ const Dice = (props) => {
     function closeModal(){
         setModalIsOpen(false)
     }
-    function rules(){
-        openModal()
-    }
-    return(
-        <div className="diceDiv">
-            <div className="diceArea" id="diceArea"></div>
-            {(props.showButtons)
-            ?
-            <div className="diceBtns">
-                <button className="btn" onClick={()=>{roll()}}>Roll Dice</button>
-                <button className="btn" onClick={()=>{reset()}}>Reset</button>
-                <button className="btn" onClick={rules}>How To Play</button>
-                <Modal
-                    isOpen={modalIsOpen}
-                    ariaHideApp={false}
-                    onRequestClose={closeModal}
-                    contentLabel="Rules"
-                    className="rulesModal"
-                >
-                    <div className="rules" id="rules">
-                        <button value="X" className="xBtn" onClick={closeModal}>X</button>
-                        <h1 className="rulesTitle">How to play:</h1>
-                        <ul className="rulesList">
-                            <li>Click the 'Roll Dice' button to roll the dice</li>
-                            <li>Your score will be represented by how many green bottles are standing on the wall</li>
-                            <li>Keep clicking, rolling, and stacking those bottles</li>
-                            <li>If you roll a 1, 1 green bottle will fall, causing all the others to smash and you will have to start again</li>
-                            <li>You can also hit the 'Reset' button at any time to start again</li>
-                            <li>Once you have reached 20 bottles...<p>YOU'RE A WINNER, BABY!</p></li>
-                        </ul>
-                    </div> 
-                </Modal>
-            </div>
-            :
-            <></>
-            }
-
-        </div>
-    )
+  return(
+    <div className="diceDiv">
+      <div className="diceArea" id="diceArea"></div>
+      <div className="diceBtns">
+        <button className="diceBtn" onClick={()=>{roll()}}>Roll Dice</button>
+        <button className="diceBtn" onClick={()=>{reset()}}>Reset</button>
+        <button className="diceBtn" onClick={openModal}>How To Play</button>
+      </div>
+        <Modal
+        isOpen={modalIsOpen}
+        ariaHideApp={false}
+        onRequestClose={closeModal}
+        contentLabel="Rules"
+        className="rulesModal"
+        >
+          <div className="rules" id="rules">
+            <button value="X" className="xBtn" onClick={closeModal}>X</button>
+            <h1 className="rulesTitle">How to play:</h1>
+            <ul className="rulesList">
+              <li>Click the 'Roll Dice' button to roll the dice</li>
+              <li>Your score will be represented by how many green bottles are standing on the wall</li>
+              <li>Keep clicking, rolling, and stacking those bottles</li>
+              <li>If you roll a 1, 1 green bottle will fall, causing all the others to smash and you will have to start again</li>
+              <li>You can also hit the 'Reset' button at any time to start again</li>
+              <li>Once you have reached 20 bottles...<p>YOU'RE A WINNER, BABY!</p></li>
+            </ul>
+          </div> 
+        </Modal>
+    </div>
+  )
 };
 
 export default Dice;

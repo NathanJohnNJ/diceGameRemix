@@ -1,30 +1,16 @@
-import logo from './images/logo.gif';
+import Header from './components/header';
 import './App.css';
 import Game from './components/game';
 import Footer from './components/footer';
 import StartModal from './components/startModal';
-import { useState } from 'react';
 
 function App() {
-  const [showButtons, setShowButtons] = useState(false)
   return (
     <div className="App">
-      <StartModal setShowButtons={setShowButtons} />
-      <header className="App-header">
-      <a href="https://www.njtd.xyz"><img src={logo} className="App-logo" alt="logo" /></a>
-        <div className="welcome" id="welcome">
-          <h1>NJ Codes Proudly Presents...</h1>
-        </div>
-        <div className="title" id="title">
-          <h2 id="titleText">The Green Bottles Dice Game</h2>
-        </div>
-      </header>
-      <div className="AppGame">
-        <Game showButtons={showButtons}/>
-      </div>
-      <div className="AppFooter">
-        <Footer />
-      </div>
+      <StartModal />
+      <Header />
+      <Game />
+      <Footer />
     </div>
   );
 }

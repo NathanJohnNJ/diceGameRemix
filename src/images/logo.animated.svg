@@ -1,0 +1,459 @@
+<svg id="animatedLogo" height="1024" width="1024" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"  xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <defs>
+    <clipPath id="clipCircle">
+      <circle cx="512" cy="512" r="465"/>
+    </clipPath>
+    <linearGradient id="camoGrad" gradientTransform="rotate(50)">
+      <stop offset="25%" stop-color="rgb(210,210,210)" />
+      <stop offset="50%" stop-color="rgb(220,220,220)" />
+      <stop offset="75%" stop-color="rgb(190,190,190)" />
+      <stop offset="100%" stop-color="rgb(195,195,195)" />
+    </linearGradient>
+    <linearGradient id="camoGrad2">
+      <stop offset="0%" stop-color="rgb(80,80,80)" />
+      <stop offset="30%" stop-color="rgb(110,110,110)" />
+      <stop offset="70%" stop-color="rgb(130,130,130)" />
+      <stop offset="100%" stop-color="rgb(90,90,90)" />
+    </linearGradient>
+    <linearGradient id="camoGrad3" gradientTransform="rotate(95)">
+      <stop offset="5%" stop-color="rgb(90,90,90)" />
+      <stop offset="45%" stop-color="rgb(60,60,60)" />
+      <stop offset="85%" stop-color="rgb(50,50,50)" />
+      <stop offset="100%" stop-color="rgb(65,65,65)" />
+    </linearGradient>
+    <linearGradient id="camoGrad4" gradientTransform="rotate(105)">
+      <stop offset="5%" stop-color="rgb(160,160,160)" />
+      <stop offset="35%" stop-color="rgb(130,130,130)" />
+      <stop offset="75%" stop-color="rgb(100,100,100)" />
+      <stop offset="100%" stop-color="rgb(120,120,120)" />
+    </linearGradient>
+    <linearGradient id="hatGrad">
+      <stop offset="0%" stop-color="#000000" />
+      <stop offset="25%" stop-color="#3c3c3c" />
+      <stop offset="50%" stop-color="#6f6f6f" />
+      <stop offset="55%" stop-color="#6f6f6f" />
+      <stop offset="75%" stop-color="#3c3c3c" />
+      <stop offset="100%" stop-color="#000000" />
+    </linearGradient>
+    <linearGradient id="bodyGrad">
+      <stop offset="1%" stop-color="#1f1f1f" />
+      <stop offset="75%" stop-color="#3c3c3c" />
+    </linearGradient>
+    <linearGradient id="macGrad" gradientTransform="rotate(90)">
+      <stop offset="10%" stop-color="#cfcfcf" />
+      <stop offset="95%" stop-color="#7e7e82" />
+    </linearGradient>
+    <linearGradient id="faceGrad" gradientTransform="rotate(90)">
+      <stop offset="10%" stop-color="#a9825a" />
+      <stop offset="30%" stop-color="#c5845c" />
+      <stop offset="80%" stop-color="#e5ac79" />
+      <stop offset="85%" stop-color="#ffd9ae" />
+    </linearGradient>
+    <linearGradient id="earGrad" gradientTransform="rotate(90)">
+      <stop offset="10%" stop-color="#ffd9ae" />
+      <stop offset="55%" stop-color="#e5ac79" />
+    </linearGradient>
+    <linearGradient id="shadowGrad" gradientTransform="rotate(90)">
+      <stop offset="0%" stop-color="#a68642" />
+      <stop offset="90%" stop-color="#7d5524" />
+    </linearGradient>
+    <linearGradient id="eyeGrad" gradientTransform="rotate(90)">
+      <stop offset="50%" stop-color="#000000" />
+      <stop offset="75%" stop-color="#ffffff" />
+    </linearGradient>
+    <linearGradient id="browGrad" gradientTransform="rotate(15)">
+      <stop offset="50%" stop-color="#4d3120" />
+      <stop offset="75%" stop-color="#5c3b2a" />
+    </linearGradient>
+    <linearGradient id="noseHL" gradientTransform="rotate(90)">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.1)" />
+      <stop offset="60%" stop-color="rgba(255,255,255,0.15)" />
+      <stop offset="100%" stop-color="rgba(255,255,255,0.68)" />
+    </linearGradient>
+    <linearGradient id="glassesGrad" gradientTransform="rotate(90)">
+      <stop stop-color="#202020" />
+      <stop offset="33%" stop-color="#4a4d4d" />
+    </linearGradient>
+    <linearGradient id="piercingGrad" gradientTransform="rotate(90)">
+      <stop stop-color="#0000ff" />
+      <stop offset="33%" stop-color="#020d2f" />
+    </linearGradient>
+  </defs>
+
+
+  <!-- LAYER 1 -->
+
+  <g id="layer1">
+    <circle r="504" cx="512" cy="512" style="stroke:black;fill:none;stroke-width:12px" transform-origin="center" transform="scale(0)">
+      <animateTransform id="circleAnim1" attributeType="XML" attributeName="transform" type="scale" values="0;1" dur="2s" begin="0s" repeatCount="1" fill="freeze" />     
+    </circle>
+    <circle r="483" cx="512" cy="512" style="stroke:black;fill:none;stroke-width:8px" transform-origin="center" transform="scale(0)">
+      <animateTransform id="circleAnim2" attributeType="XML" attributeName="transform" type="scale" values="0;1" dur="0.8s" begin="circleAnim1.end-1s" repeatCount="1" fill="freeze" />     
+    </circle>
+    <circle r="465" cx="512" cy="512" style="stroke:black;fill:none;stroke-width:4px" transform-origin="center" transform="scale(0)">
+      <animateTransform id="circleAnim3" attributeType="XML" attributeName="transform" type="scale" values="0;1" dur="1.2s" begin="circleAnim2.end-1s" repeatCount="1" fill="freeze" />     
+    </circle>
+  </g>
+
+
+  <!-- LAYER 2 -->
+
+  <circle id="layer2" r="465" cx="512" cy="512" style="stroke:black;fill:black;">
+      <animate id="circleAnim4" attributeName="fill-opacity" values="0;0.8" dur="8s" begin="0s" repeatCount="1" fill="freeze" />
+  </circle>
+
+
+  <!-- LAYER 3 -->
+
+  <g id="layer3" clip-path="url(#clipCircle)"> 
+    <g fill-opacity="0" stroke-width="0" fill="url(#camoGrad)" stroke="url(#camoGrad)">
+      <path d="M770,420c25,50 75,-50 100,0q25,50 70,0c55,-51 55,100 30,130q-20,35 -50,20q-35,-30 -80,-5t-40,-45c-20,-50 -80,-10 -65,-100c5,-30 25,-20 35,0z" />
+      <path d="M770,420c25,50 75,-50 100,0q25,50 70,0c55,-51 55,100 30,130q-20,35 -50,20q-35,-30 -80,-5t-40,-45c-20,-50 -80,-10 -65,-100c5,-30 25,-20 35,0z" transform="rotate(72 512 512)" />
+      <path d="M770,420c25,50 75,-50 100,0q25,50 70,0c55,-51 55,100 30,130q-20,35 -50,20q-35,-30 -80,-5t-40,-45c-20,-50 -80,-10 -65,-100c5,-30 25,-20 35,0z" transform="rotate(144 512 512)" />
+      <path d="M770,420c25,50 75,-50 100,0q25,50 70,0c55,-51 55,100 30,130q-20,35 -50,20q-35,-30 -80,-5t-40,-45c-20,-50 -80,-10 -65,-100c5,-30 25,-20 35,0z" transform="rotate(216 512 512)" />
+      <path d="M770,420c25,50 75,-50 100,0q25,50 70,0c55,-51 55,100 30,130q-20,35 -50,20q-35,-30 -80,-5t-40,-45c-20,-50 -80,-10 -65,-100c5,-30 25,-20 35,0z" transform="rotate(288 512 512)" />
+      <animate id="strokeAnim1" attributeName="stroke-dasharray" values="0% 100%;100% 0%" dur="1.5s" begin="circleAnim4.end-5s" repeatCount="1" calcMode="linear"/>
+      <animate attributeName="fill-opacity" values="0;1" dur="2s" begin="circleAnim4.end-4s" repeatCount="1" fill="freeze" />
+      <animate attributeName="stroke-width" values="5;1" dur="2s" begin="circleAnim4.end-4" repeatCount="1" fill="freeze" />
+    </g>
+    <g fill-opacity="0" stroke-width="0" fill="url(#camoGrad2)" stroke="url(#camoGrad2)">
+      <path d="M200,150c-30,-85 90,-40 110,0q60,70 90,0c35,-65 75,100 40,130c5,0 -30,30 -60,20c-60,-40 -55,75 -90,0c-50,-100 -80,25 -150,-70c0,-30 70,-5 -15,-95z" />
+      <path d="M200,150c-30,-85 90,-40 110,0q60,70 90,0c35,-65 75,100 40,130c5,0 -30,30 -60,20c-60,-40 -55,75 -90,0c-50,-100 -80,25 -150,-70c0,-30 70,-5 -15,-95z" transform="rotate(60 512 512)" />
+      <path d="M200,150c-30,-85 90,-40 110,0q60,70 90,0c35,-65 75,100 40,130c5,0 -30,30 -60,20c-60,-40 -55,75 -90,0c-50,-100 -80,25 -150,-70c0,-30 70,-5 -15,-95z" transform="rotate(120 512 512)" />
+      <path d="M200,150c-30,-85 90,-40 110,0q60,70 90,0c35,-65 75,100 40,130c5,0 -30,30 -60,20c-60,-40 -55,75 -90,0c-50,-100 -80,25 -150,-70c0,-30 70,-5 -15,-95z" transform="rotate(180 512 512)" />
+      <path d="M200,150c-30,-85 90,-40 110,0q60,70 90,0c35,-65 75,100 40,130c5,0 -30,30 -60,20c-60,-40 -55,75 -90,0c-50,-100 -80,25 -150,-70c0,-30 70,-5 -15,-95z" transform="rotate(240 512 512)" />
+      <path d="M200,150c-30,-85 90,-40 110,0q60,70 90,0c35,-65 75,100 40,130c5,0 -30,30 -60,20c-60,-40 -55,75 -90,0c-50,-100 -80,25 -150,-70c0,-30 70,-5 -15,-95z" transform="rotate(300 512 512)" />
+      <animate id="strokeAnim2" attributeName="stroke-dasharray" values="0% 100%;100% 0%" dur="1.5s" repeatCount="1" calcMode="linear" begin="strokeAnim1.end-2s" />
+      <animate attributeName="fill-opacity" from="0" to="1" dur="2s" begin="strokeAnim1.end-1s" repeatCount="1" fill="freeze" calcMode="linear" />
+      <animate attributeName="stroke-width" values="5;1" dur="2s" begin="strokeAnim1.end-2s" repeatCount="1" fill="freeze" />
+    </g>
+    <g clip-path="url(#clipCircle)" fill-opacity="0" stroke-width="0" fill="url(#camoGrad3)" stroke="url(#camoGrad3)">
+      <path d="m 350 425 c -50 -31 30 -23 32 -51 q 14 -71 50 -27 c 21 56 10 -90 67 -40 c 34 53 96 -59 104 49 c -58 89 87 60 -25 168 c -84 102 -70 -35 -162 7 c -151 41 20 -27 -44 -94 z" />
+      <path d="m 425 565 c 41 -64 64 44 111 8 c 102 -79 23 50 84 113 c 112 20 -8 131 -81 17 c -40 -47 5 102 -48 88 c -55 19 -5 -58 -80 -78 c -72 -9 37 -80 12 -147 z" />
+      <animate id="strokeAnim4" attributeName="stroke-dasharray" values="0% 100%;100% 0%" dur="1.5s" repeatCount="1" calcMode="linear" begin="strokeAnim3.end-2s" />
+      <animate attributeName="fill-opacity" from="0" to="1" dur="2s" begin="strokeAnim3.end-1s" repeatCount="1" fill="freeze" calcMode="linear" />
+      <animate attributeName="stroke-width" values="5;1" dur="2s" begin="strokeAnim3.end-2s" repeatCount="1" fill="freeze" />
+    </g>
+    <g clip-path="url(#clipCircle)" fill-opacity="0" stroke-width="0" fill="url(#camoGrad4)" stroke="url(#camoGrad4)">
+      <path d="M 270 250 c 7 -30 45 -40 55 10 s 12.5 0 64 -2 s 30 38 65 30 s 15 25 28 38 s -32 47 -50 20 s -60 15 -57 39 s -50 20 -58 0 s -32 7 -45 15 q -52 33 5 -50 q 5 -20 -20 -40 c -40 -40 -1 -18 13 -60 z" />
+      <path d="M 290 250 c 7 -30 45 -40 55 10 s 12.5 0 64 -2 s 30 38 65 30 s 15 25 28 38 s -32 47 -50 20 s -60 15 -57 39 s -50 20 -58 0 s -32 7 -45 15 q -52 33 5 -50 q 5 -20 -20 -40 c -40 -40 -1 -18 13 -60 z" transform="rotate(90 512 512)" />
+      <path d="M 270 250 c 7 -30 45 -40 55 10 s 12.5 0 64 -2 s 30 38 65 30 s 15 25 28 38 s -32 47 -50 20 s -60 15 -57 39 s -50 20 -58 0 s -32 7 -45 15 q -52 33 5 -50 q 5 -20 -20 -40 c -40 -40 -1 -18 13 -60 z" transform="rotate(180 512 512)" />
+      <path d="M 290 250 c 7 -30 45 -40 55 10 s 12.5 0 64 -2 s 30 38 65 30 s 15 25 28 38 s -32 47 -50 20 s -60 15 -57 39 s -50 20 -58 0 s -32 7 -45 15 q -52 33 5 -50 q 5 -20 -20 -40 c -40 -40 -1 -18 13 -60 z" transform="rotate(270 512 512)" />
+      <animate id="strokeAnim3" attributeName="stroke-dasharray" values="0% 100%;100% 0%" dur="1.5s" repeatCount="1" calcMode="linear" begin="strokeAnim2.end-2s" />
+      <animate attributeName="fill-opacity" from="0" to="1" dur="2s" begin="strokeAnim2.end-1s" repeatCount="1" fill="freeze" calcMode="linear" />
+      <animate attributeName="stroke-width" values="5;1" dur="2s" begin="strokeAnim2.end-2s" repeatCount="1" fill="freeze" />
+    </g>
+    
+  </g>
+    
+
+  <!-- LAYER 4 --> 
+<g transform="translate(0, 75)" transform-origin="center">
+  <g id="layer4" transform="scale(0)" opacity="0" transform-origin="center">
+    <g id="face">
+      <g id="ears">
+        <g id="leftEar">
+          <path id="leftOne" d="M414,310 c-25,-16 -20,25 5,52" style="fill: url('#faceGrad'); stroke: url(#faceGrad); stroke-width: 3;" />
+          <path id="leftTwo" d="M414,310 c-25,-16 -20,25 5,50" style="fill: none; stroke: url(#earGrad); stroke-width: 5;" /> 
+          <circle id="leftThree" cx="405" cy="344" r="2" style="fill:url(#piercingGrad);stroke-width:1px"   />  
+          <circle id="leftFour" cx="403" cy="340" r="2" style="fill:url(#piercingGrad);stroke-width:1px"   />  
+          <circle id="leftFive" cx="401" cy="336" r="2" style="fill:url(#piercingGrad);stroke-width:1px"   /> 
+          <circle id="leftSix" cx="411" cy="352.25" r="5.5" style="fill:url(#piercingGrad);stroke-width:1px"   />
+          <g id="leftTragus" transform="translate(0,-1.5)">
+            <circle id="leftSeven" cx="411" cy="336" r="2" style="fill:url(#piercingGrad);stroke-width:1px"   /> 
+            <circle id="leftEight" cx="411" cy="331" r="2" style="fill:url(#piercingGrad);stroke-width:1px"   /> 
+          </g>
+          <circle id="leftNine" cx="403" cy="312" r="2" style="fill:url(#piercingGrad);stroke-width:1px"   /> 
+        </g>
+        <g id="rightEar">
+          <path id="rightOne" d="M 610 310 c 25 -16 20 25 -5 52" style="fill: url('#faceGrad'); stroke: url(#faceGrad); stroke-width: 3;" />
+          <path id="rightTwo" d="M 610 310 c 25 -16 20 25 -5 50" style="fill: none; stroke: url(#earGrad); stroke-width: 5;" />  
+          <circle id="rightThree" cx="616" cy="343" r="2" style="fill:url(#piercingGrad);stroke-width:1px"  /> 
+          <g id="rightTragus" transform="translate(0,-1.5)">
+            <circle id="rightFour" cx="612.5" cy="332" r="2" style="fill:url(#piercingGrad);stroke-width:1px"  />
+            <circle id="rightFive" cx="614" cy="335" r="2" style="fill:url(#piercingGrad);stroke-width:1px"  />
+            <circle id="rightSix" cx="614" cy="329" r="2" style="fill:url(#piercingGrad);stroke-width:1px"   />
+          </g>
+          <circle id="rightSeven" cx="610" cy="352.25" r="5.5" style="fill:url(#piercingGrad);stroke-width:1px"  />
+          <circle id="rightEight" cx="619" cy="338" r="2" style="fill:url(#piercingGrad);stroke-width:1px"   />
+        </g>
+      </g>
+      <path id="mainFace" d="M409.6,300 L512,260 L 614.4,300 Q614.4,330 606,380 H418 Q409.6,330 409.6,300" style="fill: url('#faceGrad'); stroke: url(#shadowGrad); stroke-width: 2;" />
+      <g id="eyes" >
+        <g id="left" transform="translate(-1,1) rotate(5, 512, 358.4)">
+          <path id="leftEyeOne" d="M439.5,338 q20,-25 50,-2 q-25,30 -48, 1" style="fill: #ffffff; stroke:#ffffff;stroke-width:1;opacity:0.35" />
+          <path id="leftEyeTwo" d="M441,339 Q462,313 492,336 Q462,356 441, 339" style="fill: #efefef; stroke: url(#eyeGrad); stroke-width: 1;" /> 
+          <circle id="leftEyeThree" cx="467" cy="336" r="8.5" style="fill: black; stroke: #0e2089; stroke-width: 4.5;"/>
+          <circle id="leftEyeFour" cx="469" cy="342" r="3.5" style="fill: white; stroke-width: 0;"/>
+          <circle id="leftEyeFive" cx="468.5" cy="341" r="4.5" style="fill: rgba(255,255,255,0.4); stroke-width: 0;"/>
+          <path id="leftLash" d="M440,337Q440,338,436,335L446,333Q446,334,442,331L452,329Q452,330,448,327L458,325Q473,317,493,337Q466,312,441,339Z " style="fill: #black; stroke:black; stroke-width: 1.1; opacity:0.95" />
+        </g>
+        <g id="right" transform="translate(1,1) rotate(-5, 512, 358.4)">
+          <path id="rightEyeOne" d="M 584.5 338 q -20 -25 -50 -2 q 25 30 48 1" style="fill: #ffffff; stroke:#ffffff;stroke-width:1;opacity:0.35"  />
+          <path id="rightEyetwo" d="m 583 339 q -21 -26 -51 -3 q 30 20 51 3" style="fill: #efefef; stroke: url(#eyeGrad); stroke-width: 1;" />   
+          <circle id="rightEyeThree"  cx="558" cy="336" r="8.5" style="fill: black; stroke: #0e2089; stroke-width:4.5;"/>
+          <circle id="rightEyeFour" cx="555" cy="342" r="3.5" style="fill: white; stroke-width: 0;" />
+          <circle id="rightEyeFive" cx="555.5" cy="341" r="4.5" style="fill: rgba(255,255,255,0.4); stroke-width: 0;" />
+          <path id="rightLash" d="M 584 337 Q 584 338 588 335 L 578 333 Q 578 334 582 331 L 572 329 Q 572 330 576 327 L 566 325 Q 551 317 531 337 Q 558 312 583 339 Z" style="fill: #black; stroke:black; stroke-width: 1; opacity:0.95" />
+        </g>
+        <g id="brows" transform="translate(0,-0.25)">
+          <path id="leftBrow" d="M426,317 q2,-2 8,-3 q-3,-1 -6,1 q2,-2 8,-3 q-3,-1 -6,1 q2,-2 8,-3 q-3,-1 -6,1 q2,-2 8,-3 q-3,-1 -5,1 q2,-2 8,-3 q-3,-1 -5,0 q2,-2 8,-2 q-3,-1 -5,0 q3,0 7,0 q-2,-2 -5,-2 q5,-2 15,2 q-6,-3 -8,-4 q3,-1 15,3 q-6,-3 -8,-4 q5,-2 15,4 q-6,-3 -3,-3 q3,-2 13,5 q-3,-4 -4,-4 q2,-1 5,4 q-1,-2 -1,-3 q1,-1 4,2 q1,-2 0,-2 q2,-1 4,4 q1,-2 1,-4 q1,-1 3,6 q1,-2 0,-4 q1,-2 2,5 q1,5 -1,8 q-35 -10 -48, -6z" style="fill: url(#browGrad); stroke:url(#browGrad); stroke-width: 1;"  />
+          <path id="rightBrow" d="M 598 317 q -2 -2 -8 -3 q 3 -1 6 1 q -2 -2 -8 -3 q 3 -1 6 1 q -2 -2 -8 -3 q 3 -1 6 1 q -2 -2 -8 -3 q 3 -1 5 1 q -2 -2 -8 -3 q 3 -1 5 0 q -2 -2 -8 -2 q 3 -1 5 0 q -3 -0 -7 -0 q 2 -2 5 -2 q -5 -2 -15 2 q 6 -3 8 -4 q -3 -1 -15 3 q 6 -3 8 -4 q -5 -2 -15 4 q 6 -3 3 -3 q -3 -2 -13 5 q 3 -4 4 -4 q -2 -1 -5 4 q 1 -2 1 -3 q -1 -1 -4 2 q -1 -2 0 -2 q -2 -1 -4 4 q -1 -2 -1 -4 q -1 -1 -3 6 q -1 -2 0 -4 q -1 -2 -2 5 q -1 5 1 8 q 35 -10 48 -6 z" style="fill: url(#browGrad); stroke:url(#browGrad); stroke-width: 1;"  />
+        </g>
+      </g>
+    <g id="noseDetail">
+      <path id="nose" d="M 499 339 Q 502 346 499 350 C 485 370 539 370 525 350 Q 522 346 525 339" style="fill:none; stroke-width: 3; stroke:#5c3b2a; opacity:0.15; stroke-linecap:round" />
+      <path id="noseHighlight" d="M 490 363 C 519 351 500 325 512 322 V 375z" fill="url(#noseHL)" stroke="none" />
+      <path id="noseHighlight" d="M 534 363 C 505 351 524 325 512 322 V 375z" fill="url(#noseHL)" stroke="none" />
+      <path id="noseShadow" d="M493,355 
+      c19,-16 0,-35 19,-38 
+      c19,3 0,22 19,38" style="fill:none; stroke-width:7.5; stroke:#5c3b2a; opacity:0.25; stroke-linecap:round" />
+    </g>
+      <path id="glasses" d="M420,310 Q460,308 495,315C500,310 525,310 530,315Q563,308 605,310 L609,308L608,313L604,316Q602,345 589,358Q549,362 534,354C527,348 527,334 525,326 C521,312 503,312 499,326M525.5,330L526,316" style="fill: none; stroke:url(#glassesGrad); stroke-width: 10;" />
+      <path id="glasses" d="M 604 310 Q 564 308 529 315 C 524 310 499 310 494 315 Q 461 308 419 310 L 415 308 L 416 313 L 420 316 Q 422 345 435 358 Q 475 362 490 354 C 497 348 497 334 499 326 C 503 312 521 312 525 326 M 498.5 330 L 498 316" style="fill: none; stroke:url(#glassesGrad); stroke-width: 10;"/>
+      <path id="nosePiercing" d="M500,355 c -11,-5 -10,15 0,9" style="fill:none; stroke-width:2; stroke:#2c205d; stroke-linecap:round" />
+    </g>
+    <g id="hat" >
+      <path id="mainHat" d="M414,270 c-10,-105 206,-105 198,-10 l-3,28 c-8,-35 -186,-35 -192,0z" style="fill: url('#hatGrad'); stroke: url(#hatGrad); stroke-width: 1;" />
+      <path id="peak" d="M410,300 c-20,-50 236,-50 206,0 l-4,5 c2,-27 -198,-27 -192,0z" style="fill: #050505; stroke: #000000; stroke-width: 1;" />
+    </g>
+    <g id="shoulders" transform="translate(0,4)">
+      <path id="leftShoulder" d="M340,515 q0,-50 40,-60 l0,60" style="fill: url('#bodyGrad'); stroke: url(#bodyGrad); stroke-width: 1;" />
+      <path id="rightShoulder" d="M 684 515 q 0 -50 -40 -60 l -0 60" style="fill: url('#bodyGrad'); stroke: url(#bodyGrad); stroke-width: 1;" />
+    </g>
+    <g id="mac" >
+      <path id="macPath" d="M387.5,515 c-10,0 -10,0 -12,-10 l-15,-140 c0,-10 0,-10 15,-10 l275,0 c15,0 15,0 15,10 l-15,140 c0,10 0,10 -15,10z" style="fill: url('#macGrad'); stroke: url(#macGrad); stroke-width: 1;"  transform="translate(0,4)"/>
+      <g id="raspberry" transform="scale(0.9) translate(0,-20)" transform-origin="center">
+        <g id="raspLeaves">
+          <path id="leftLeaf" d="M510,430 q-20,5 -25,-15 q35,0 30,15" style="fill:#efefef; stroke-width: 1; stroke:#efefef"  />
+          <path id="rightLeaf" d="M514 430 q 20 5 25 -15 q -35 -0 -30 15" style="fill:#efefef; stroke-width: 1; stroke:#efefef"  />
+        </g>
+        <g id="raspMain">
+          <circle id="raspberry1" cx="497.5" cy="438" r="9" style="fill:#efefef; stroke-width: 0;" />
+          <circle id="raspberry2" cx="510" cy="437.5" r="9" style="fill:#efefef; stroke-width: 0;" />
+          <circle id="raspberry3" cx="495" cy="450" r="9" style="fill:#efefef; stroke-width: 0;" />
+          <circle id="raspberry4" cx="507" cy="447" r="9" style="fill:#efefef; stroke-width: 0;" />
+          <circle id="raspberry5" cx="500" cy="462.5" r="9" style="fill:#efefef; stroke-width: 0;" />
+          <circle id="raspberry6" cx="510" cy="460" r="9" style="fill:#efefef; stroke-width: 0;" />
+          <circle id="raspberry7" cx="512" cy="470" r="8" style="fill:#efefef; stroke-width: 0;" />
+        </g>
+        <g id="raspMain2">
+          <circle id="raspberry8" cx="526.5" cy="438" r="9" style="fill:#efefef; stroke-width: 0;" />
+          <circle id="raspberry9" cx="520" cy="437.5" r="9" style="fill:#efefef; stroke-width: 0;" />
+          <circle id="raspberry10" cx="529" cy="450" r="9" style="fill:#efefef; stroke-width: 0;" />
+          <circle id="raspberry11" cx="517" cy="447" r="9" style="fill:#efefef; stroke-width: 0;" />
+          <circle id="raspberry12" cx="524" cy="462.5" r="9" style="fill:#efefef; stroke-width: 0;" />
+        </g>
+      </g>
+    </g>
+    <animate attributeName="opacity" from="0" to="1" dur="2s" begin="strokeAnim4.end" repeatCount="1" fill="freeze" calcMode="linear" />
+    <animateTransform id="meAnim" attributeType="XML" attributeName="transform" type="scale" values="0;1.4" dur="2s" begin="strokeAnim4.end" repeatCount="1" fill="freeze" />   
+    <animateTransform id="meTransY" target="layer4" attributeType="XML" attributeName="transform" type="translate" values="0,75;0,-75" dur="1.5s" begin="startAnimation.begin" fill="freeze" calcMode="linear" />  
+    <animateTransform id="meTransYBack" target="layer4" attributeType="XML" attributeName="transform" type="translate" values="0,-75;0,75" dur="1.5s" begin="reverseAnimation.begin" fill="freeze" calcMode="linear" />
+  </g>
+    <animateTransform id="meShrink" attributeType="XML" attributeName="transform" type="scale" values="1.4;1" dur="1.5s" begin="startAnimation.begin" fill="freeze" calcMode="linear" />
+    <animateTransform id="meGrow" attributeType="XML" attributeName="transform" type="scale" values="1;1.4" dur="1.5s" begin="reverseAnimation.begin" fill="freeze" calcMode="linear" /> 
+  </g>
+
+
+  <!-- LAYER 5 -->
+
+  <!-- <g id="layer5" fill="none" stroke="#ffffff"  stroke-width="13" stroke-linecap="round" transform="scale(1.18)" transform-origin="center" stroke-dasharray="0% 100%">
+    
+    <path id="dark" d="M190 720v-145c0 -18 28 -35 51 -18l69,90v-100  M227 720v-100l69,90c23,18 51,0 51,-17v-145M433 551h45c15 0 30 15 30 30v83c2 82 -140 82 -142 0M433 588 h25 c6 0 12 6 12 12 v64 c-3 33 -65 33 -68 0" stroke="#333333" transform="translate(-5,5)"  stroke-width="0" >
+      <animate id="animN" attributeName="stroke-dasharray" values="0% 100%;100% 0%" dur="3.5s"   begin="meAnim.end-1s" fill="freeze" calcMode="linear" />
+      <animate attributeName="stroke-width" from="0" to="14.5" dur="1.5s" begin="meAnim.end-1.5s"  fill="freeze" calcMode="linear" />
+      <animate attributeName="d" values="M190 720v-145c0 -18 28 -35 51 -18l69,90v-100 M227 720v-100l69,90c23,18 51,0 51,-17v-145 M433 551h45c15 0 30 15 30 30v83c2 82 -140 82 -142 0 M433 588 h25 c6 0 12 6 12 12 v64 c-3 33 -65 33 -68 0; M 251 482 V 482 C 500 482 500 482 500 482 L 768 482 V 482 M 251 482 V 482 L 296 482 C 319 482 347 482 347 482 V 482M 251 482 H 296 C 296 482 326 482 326 482 V 482 C 328 482 330 482 340 482M 251 482 H 458 C 464 482 470 482 470 482 V 482 C 467 482 405 482 768 482
+      " dur="1.5s" begin="startAnimation.begin" fill="freeze" calcMode="linear" />
+      <animate attributeName="stroke-width" values="14.5;80" dur="1.5s" begin="startAnimation.begin" fill="freeze" calcMode="linear" />
+      <animate attributeName="d" values="M 251 482 V 482 C 500 482 500 482 500 482 L 768 482 V 482 M 251 482 V 482 L 296 482 C 319 482 347 482 347 482 V 482M 251 482 H 296 C 296 482 326 482 326 482 V 482 C 328 482 330 482 340 482 M 251 482 H 458 C 464 482 470 482 470 482 V 482 C 467 482 405 482 768 482;M 190 720 V 575 C 190 557 218 540 241 557 L 310 647 V 547 M 227 720 V 620 L 296 710 C 319 728 347 710 347 693 V 548M 433 551 H 478 C 493 551 508 566 508 581 V 664 C 510 746 368 746 366 664M 433 588 H 458 C 464 588 470 594 470 600 V 664 C 467 697 405 697 402 664" dur="1.5s" begin="reverseAnimation.begin" fill="freeze" calcMode="linear" />
+      <animate attributeName="stroke-width" values="80;14.5" dur="1.5s" begin="reverseAnimation.begin" fill="freeze" calcMode="linear" />
+    </path>
+    <path id="dark2" d="M 527.5 551 H 672.5 M 527.5 588 H 571 C 576 588 581 593 581 598 V 720M 619.5 720 V 598 C 619.5 593 624.5 588 629.5 588 H 673M 733 551 H 763 C 858 566 858 705 778 726 H 728 C 693 726 693 726 693 691 V 586 C 693 551 693 551 733 551 M 743 589 H 748 C 813 594 816 688 743 683 H 738 C 734 683 734 683 734 679 V 593 C 734 589 734 589 743 589" stroke="#333333" transform="translate(-5,5)" stroke-width="0" >
+      <animate attributeName="stroke-dasharray" values="0% 100%;100% 0%" dur="3.5s" begin="meAnim.end-1s" fill="freeze" calcMode="linear"/>
+      <animate attributeName="stroke-width" from="0" to="14.5" dur="1.5s" begin="meAnim.end-1.5s" fill="freeze" calcMode="linear" />
+      <animate attributeName="d" values="M 527.5 551 H 672.5 M 527.5 588 H 571 C 576 588 581 593 581 598 V 720 M 619.5 720 V 598 C 619.5 593 624.5 588 629.5 588 H 673M 733 551 H 763 C 858 566 858 705 778 726 H 728 C 693 726 693 726 693 691 V 586 C 693 551 693 551 733 551 M 743 589 H 748 C 813 594 816 688 743 683 H 738 C 734 683 734 683 734 679 V 593 C 734 589 734 589 743 589; M 251 602 H 763 M 251 602 H 763 C 763 602 763 602 768 602 V 602 M 251 602 V 602 C 251 602 251 602 251 602 H 768M 251 722 H 351 C 351 722 351 722 351 722 H 763 C 763 722 763 722 763 722 V 722 C 763 722 763 722 768 722 M 251 722 H 763 C 763 722 763 722 763 722 H 763 C 763 722 763 722 763 722 V 722 C 763 722 763 722 768 722" dur="1.5s" begin="startAnimation.begin" fill="freeze" calcMode="linear" />
+      <animate attributeName="stroke-width" values="14.5;80" dur="1.5s" begin="startAnimation.begin" fill="freeze" calcMode="linear" />
+      <animate attributeName="d" values="
+      M 251 602 H 763
+
+      M 251 602 
+      H 763 
+      C 763 602 763 602 768 602 
+      V 602
+      
+      M 251 602 
+      V 602 
+      C 251 602 251 602 251 602 
+      H 768
+      
+      M 251 722 
+      H 351 
+      C 351 722 351 722 351 722 
+      H 763 
+      C 763 722 763 722 763 722 
+      V 722 
+      C 763 722 763 722 768 722
+      
+      M 251 722 
+      H 763 
+      C 763 722 763 722 763 722 
+      H 763 
+      C 763 722 763 722 763 722 
+      V 722 
+      C 763 722 763 722 768 722
+      
+      ;
+      
+      M 527.5 551 
+      H 672.5 
+      
+      M 527.5 588 
+      H 571 
+      C 576 588 581 593 581 598 
+      V 720 
+      
+      M 619.5 720 
+      V 598 
+      C 619.5 593 624.5 588 629.5 588 
+      H 673
+      
+      M 733 551 
+      H 763 
+      C 858 566 858 705 778 726 
+      H 728 
+      C 693 726 693 726 693 691 
+      V 586 
+      C 693 551 693 551 733 551
+      
+      M 743 589 
+      H 748 
+      C 813 594 816 688 743 683 
+      H 738 
+      C 734 683 734 683 734 679 
+      V 593 
+      C 734 589 734 589 743 589" dur="1.5s" begin="reverseAnimation.begin" fill="freeze" calcMode="linear" />
+      <animate attributeName="stroke-width" values="80;14.5" dur="1.5s" begin="reverseAnimation.begin" fill="freeze" calcMode="linear" />
+    </path>
+    <path id="light" d="M190 720v-145c0 -18 28 -35 51 -18l69,90v-100  M227 720v-100l69,90c23,18 51,0 51,-17v-145M433 551h45c15 0 30 15 30 30v83c2 82 -140 82 -142 0M433 588 h25 c6 0 12 6 12 12 v64 c-3 33 -65 33 -68 0" stroke-width="0" >
+      <animate id="animN" attributeName="stroke-dasharray" values="0% 100%;100% 0%" dur="3.5s" begin="meAnim.end-1s" fill="freeze" calcMode="linear" />
+      <animate attributeName="stroke-width" from="0" to="13" dur="1.5s" begin="meAnim.end-1.5s" fill="freeze" calcMode="linear" />
+      <animate attributeName="d" values="M190 720v-145c0 -18 28 -35 51 -18l69,90v-100 M227 720v-100l69,90c23,18 51,0 51,-17v-145 M433 551h45c15 0 30 15 30 30v83c2 82 -140 82 -142 0 M433 588 h25 c6 0 12 6 12 12 v64 c-3 33 -65 33 -68 0; M 251 482 V 482 C 500 482 500 482 500 482 L 768 482 V 482 M 251 482 V 482 L 296 482 C 319 482 347 482 347 482 V 482M 251 482 H 296 C 296 482 326 482 326 482 V 482 C 328 482 330 482 340 482M 251 482 H 458 C 464 482 470 482 470 482 V 482 C 467 482 405 482 768 482
+      " dur="1.5s" begin="startAnimation.begin" fill="freeze" calcMode="linear" />
+      <animate attributeName="stroke-width" values="13;80" dur="1.5s" begin="startAnimation.begin" fill="freeze" calcMode="linear" />
+      <animate attributeName="d" values="M 251 482 V 482 C 500 482 500 482 500 482 L 768 482 V 482 M 251 482 V 482 L 296 482 C 319 482 347 482 347 482 V 482M 251 482 H 296 C 296 482 326 482 326 482 V 482 C 328 482 330 482 340 482 M 251 482 H 458 C 464 482 470 482 470 482 V 482 C 467 482 405 482 768 482;M 190 720 V 575 C 190 557 218 540 241 557 L 310 647 V 547 M 227 720 V 620 L 296 710 C 319 728 347 710 347 693 V 548M 433 551 H 478 C 493 551 508 566 508 581 V 664 C 510 746 368 746 366 664M 433 588 H 458 C 464 588 470 594 470 600 V 664 C 467 697 405 697 402 664" dur="1.5s" begin="reverseAnimation.begin" fill="freeze" calcMode="linear" />
+      <animate attributeName="stroke-width" values="80;13" dur="1.5s" begin="reverseAnimation.begin" fill="freeze" calcMode="linear" />
+    </path>
+    
+    <path id="light2" d="M 527.5 551 H 672.5 M 527.5 588 H 571 C 576 588 581 593 581 598 V 720M 619.5 720 V 598 C 619.5 593 624.5 588 629.5 588 H 673M 733 551 H 763 C 858 566 858 705 778 726 H 728 C 693 726 693 726 693 691 V 586 C 693 551 693 551 733 551 M 743 589 H 748 C 813 594 816 688 743 683 H 738 C 734 683 734 683 734 679 V 593 C 734 589 734 589 743 589" stroke-width="0" >
+      <animate attributeName="stroke-dasharray" values="0% 100%;100% 0%" dur="3.5s" begin="meAnim.end-1s" fill="freeze" calcMode="linear" />
+      <animate attributeName="stroke-width" from="0" to="13" dur="1.5s" begin="meAnim.end-1.5s" fill="freeze" calcMode="linear" />
+      <animate attributeName="d" values="M 527.5 551 H 672.5 M 527.5 588 H 571 C 576 588 581 593 581 598 V 720 M 619.5 720 V 598 C 619.5 593 624.5 588 629.5 588 H 673M 733 551 H 763 C 858 566 858 705 778 726 H 728 C 693 726 693 726 693 691 V 586 C 693 551 693 551 733 551 M 743 589 H 748 C 813 594 816 688 743 683 H 738 C 734 683 734 683 734 679 V 593 C 734 589 734 589 743 589; M 251 602 H 763 M 251 602 H 763 C 763 602 763 602 768 602 V 602 M 251 602 V 602 C 251 602 251 602 251 602 H 768M 251 722 H 351 C 351 722 351 722 351 722 H 763 C 763 722 763 722 763 722 V 722 C 763 722 763 722 768 722 M 251 722 H 763 C 763 722 763 722 763 722 H 763 C 763 722 763 722 763 722 V 722 C 763 722 763 722 768 722" dur="1.5s" begin="startAnimation.begin" fill="freeze" calcMode="linear" />
+      <animate attributeName="stroke-width" values="13;80" dur="1.5s" begin="startAnimation.begin" fill="freeze" calcMode="linear" />
+      <animate attributeName="d" values="M 251 602 H 763 M 251 602 H 763 C 763 602 763 602 768 602 V 602M 251 602 V 602 C 251 602 251 602 251 602 H 768M 251 722 H 351 C 351 722 351 722 351 722 H 763 C 763 722 763 722 763 722 V 722 C 763 722 763 722 768 722M 251 722 H 763 C 763 722 763 722 763 722 H 763 C 763 722 763 722 763 722 V 722 C 763 722 763 722 768 722;M 527.5 551 H 672.5 M 527.5 588 H 571 C 576 588 581 593 581 598 V 720 M 619.5 720 V 598 C 619.5 593 624.5 588 629.5 588 H 673M 733 551 H 763 C 858 566 858 705 778 726 H 728 C 693 726 693 726 693 691 V 586 C 693 551 693 551 733 551M 743 589 H 748 C 813 594 816 688 743 683 H 738 C 734 683 734 683 734 679 V 593 C 734 589 734 589 743 589" dur="1.5s" begin="reverseAnimation.begin" fill="freeze" calcMode="linear" />
+      <animate attributeName="stroke-width" values="80;13" dur="1.5s" begin="reverseAnimation.begin" fill="freeze" calcMode="linear" />
+    </path>
+    <circle cx="512" cy="512" r="412" stroke="none" fill="transparent">
+      <animate id="startAnimation" attributeName="r" from="412" to="0" dur="0.001s" begin="click" fill="freeze" calcMode="linear" />
+      <animate attributeName="r" from="0" to="412" dur="0.001s" begin="reverseAnimation.begin" fill="freeze" calcMode="linear" />
+    </circle>
+    <circle cx="512" cy="512" r="0" stroke="none" fill="transparent">
+      <animate attributeName="r" from="0" to="412" dur="0.001s" begin="startAnimation.begin" fill="freeze" calcMode="linear" />
+      <animate id="reverseAnimation" attributeName="r" from="412" to="0" dur="0.001s" begin="click" fill="freeze" calcMode="linear" />
+    </circle>
+  </g> -->
+
+  <g id="layer5" fill="none" stroke="#ffffff"  stroke-width="13" stroke-linecap="round" transform="scale(1.18)" transform-origin="center" stroke-dasharray="0% 100%">
+    <path id="dark" d="M190 720v-145c0 -18 28 -35 51 -18l69,90v-100  M227 720v-100l69,90c23,18 51,0 51,-17v-145M433 551h45c15 0 30 15 30 30v83c2 82 -140 82 -142 0M433 588 h25 c6 0 12 6 12 12 v64 c-3 33 -65 33 -68 0" stroke="#333333" transform="translate(-5,5)"  strokeWidth="0" >
+      <animate id="animN" attributeName="stroke-dasharray" values="0% 100%;100% 0%" dur="3.5s"   begin="meAnim.end-1s" fill="freeze" calcMode="linear" />
+      <animate attributeName="stroke-width" from="0" to="14.5" dur="1.5s" begin="meAnim.end-1.5s"  fill="freeze" calcMode="linear" />
+      <animate attributeName="d" values="M190 720v-145c0 -18 28 -35 51 -18l69,90v-100 M227 720v-100l69,90c23,18 51,0 51,-17v-145 M433 551h45c15 0 30 15 30 30v83c2 82 -140 82 -142 0 M433 588 h25 c6 0 12 6 12 12 v64 c-3 33 -65 33 -68 0; M 319 482 V 482 C 500 482 500 482 500 482 L 700 482 V 482 M 319 482 V 482 L 319 482 C 319 482 347 482 347 482 V 482M 319 482 H 319 C 319 482 326 482 326 482 V 482 C 328 482 330 482 340 482M 319 482 H 458 C 464 482 470 482 470 482 V 482 C 467 482 405 482 700 482" dur="1.5s" begin="startAnimation.begin" fill="freeze" calcMode="linear" />
+      <animate attributeName="stroke-width" values="14.5;80" dur="1.5s" begin="startAnimation.begin" fill="freeze" calcMode="linear" />
+      <animate attributeName="d" values="M 319 482 V 482 C 500 482 500 482 500 482 L 700 482 V 482 M 319 482 V 482 L 319 482 C 319 482 347 482 347 482 V 482M 319 482 H 319 C 319 482 326 482 326 482 V 482 C 328 482 330 482 340 482M 319 482 H 458 C 464 482 470 482 470 482 V 482 C 467 482 405 482 700 482;M 190 720 V 575 C 190 557 218 540 241 557 L 310 647 V 547 M 227 720 V 620 L 296 710 C 319 728 347 710 347 693 V 548M 433 551 H 478 C 493 551 508 566 508 581 V 664 C 510 746 368 746 366 664M 433 588 H 458 C 464 588 470 594 470 600 V 664 C 467 697 405 697 402 664" dur="1.5s" begin="reverseAnimation.begin" fill="freeze" calcMode="linear" />
+      <animate attributeName="stroke-width" values="80;14.5" dur="1.5s" begin="reverseAnimation.begin" fill="freeze" calcMode="linear" />
+    </path>
+    <path id="dark2" d="M 527.5 551 H 672.5 M 527.5 588 H 571 C 576 588 581 593 581 598 V 720M 619.5 720 V 598 C 619.5 593 624.5 588 629.5 588 H 673M 733 551 H 763 C 858 566 858 705 778 726 H 728 C 693 726 693 726 693 691 V 586 C 693 551 693 551 733 551 M 743 589 H 748 C 813 594 816 688 743 683 H 738 C 734 683 734 683 734 679 V 593 C 734 589 734 589 743 589" stroke="#333333" transform="translate(-5,5)" strokeWidth="0" >
+      <animate attributeName="stroke-dasharray" values="0% 100%;100% 0%" dur="3.5s" begin="meAnim.end-1s" fill="freeze" calcMode="linear"/>
+      <animate attributeName="stroke-width" from="0" to="14.5" dur="1.5s" begin="meAnim.end-1.5s" fill="freeze" calcMode="linear" />
+      <animate attributeName="d" values="M 527.5 551 H 672.5 M 527.5 588 H 571 C 576 588 581 593 581 598 V 720 M 619.5 720 V 598 C 619.5 593 624.5 588 629.5 588 H 673M 733 551 H 763 C 858 566 858 705 778 726 H 728 C 693 726 693 726 693 691 V 586 C 693 551 693 551 733 551 M 743 589 H 748 C 813 594 816 688 743 683 H 738 C 734 683 734 683 734 679 V 593 C 734 589 734 589 743 589; M 319 602 H 700 M 319 602 H 700 C 700 602 700 602 700 602 V 602 M 319 602 V 602 C 319 602 319 602 319 602 H 700M 319 722 H 351 C 351 722 351 722 351 722 H 700 C 700 722 700 722 700 722 V 722 C 700 722 700 722 700 722 M 319 722 H 700 C 700 722 700 722 700 722 H 700 C 700 722 700 722 700 722 V 722 C 700 722 700 722 700 722" dur="1.5s" begin="startAnimation.begin" fill="freeze" calcMode="linear" />
+      <animate attributeName="stroke-width" values="14.5;80" dur="1.5s" begin="startAnimation.begin" fill="freeze" calcMode="linear" />
+      <animate attributeName="d" values="M 319 602 H 700 M 319 602 H 700 C 700 602 700 602 700 602 V 602 M 319 602 V 602 C 319 602 319 602 319 602 H 700 M 319 722 H 351 C 351 722 351 722 351 722 H 700 C 700 722 700 722 700 722 V 722 C 700 722 700 722 700 722 M 319 722 H 700 C 700 722 700 722 700 722 H 700 C 700 722 700 722 700 722 V 722 C 700 722 700 722 700 722 ; M 527.5 551 H 672.5 M 527.5 588 H 571 C 576 588 581 593 581 598 V 720 M 619.5 720 V 598 C 619.5 593 624.5 588 629.5 588 H 673 M 733 551 H 763C 858 566 858 705 778 726 H 728 C 693 726 693 726 693 691 V 586 C 693 551 693 551 733 551 M 743 589 H 748 C 813 594 816 688 743 683 H 738 C 734 683 734 683 734 679 V 593 C 734 589 734 589 743 589" dur="1.5s" begin="reverseAnimation.begin" fill="freeze" calcMode="linear" />
+      <animate attributeName="stroke-width" values="80;14.5" dur="1.5s" begin="reverseAnimation.begin" fill="freeze" calcMode="linear" />
+    </path>
+    <path id="light" d="M190 720v-145c0 -18 28 -35 51 -18l69,90v-100  M227 720v-100l69,90c23,18 51,0 51,-17v-145M433 551h45c15 0 30 15 30 30v83c2 82 -140 82 -142 0M433 588 h25 c6 0 12 6 12 12 v64 c-3 33 -65 33 -68 0" strokeWidth="0" >
+      <animate id="animN" attributeName="stroke-dasharray" values="0% 100%;100% 0%" dur="3.5s" begin="meAnim.end-1s" fill="freeze" calcMode="linear" />
+      <animate attributeName="stroke-width" from="0" to="13" dur="1.5s" begin="meAnim.end-1.5s" fill="freeze" calcMode="linear" />
+      <animate attributeName="d" values="
+      M190 720
+      v-145
+      c0 -18 28 -35 51 -18
+      l69,90
+      v-100 
+      
+      M227 720
+      v-100
+      l69,90
+      c23,18 51,0 51,-17
+      v-145 
+      
+      M433 551
+      h45
+      c15 0 30 15 30 30
+      v83
+      c2 82 -140 82 -142 0 
+      
+      M433 588 
+      h25 
+      c6 0 12 6 12 12 
+      v64 
+      c-3 33 -65 33 -68 0
+      
+      ;
+      
+      M 319 482 
+      V 482 
+      C 500 482 500 482 500 482 
+      L 700 482 
+      V 482 
+      
+      M 319 482 
+      V 482 
+      L 319 482 
+      C 319 482 347 482 347 482 
+      V 482
+      
+      M 319 482 
+      H 319 
+      C 319 482 326 482 326 482 
+      V 482 
+      C 328 482 330 482 340 482
+      
+      M 319 482 
+      H 458 
+      C 464 482 470 482 470 482 
+      V 482 
+      C 467 482 405 482 700 482
+      " dur="1.5s" begin="startAnimation.begin" fill="freeze" calcMode="linear" />
+      <animate attributeName="stroke-width" values="13;80" dur="1.5s" begin="startAnimation.begin" fill="freeze" calcMode="linear" />
+      <animate attributeName="d" values="M 319 482 V 482 C 500 482 500 482 500 482 L 700 482 V 482 M 319 482 V 482 L 319 482 C 319 482 347 482 347 482 V 482M 319 482 H 319 C 319 482 326 482 326 482 V 482 C 328 482 330 482 340 482M 319 482 H 458 C 464 482 470 482 470 482 V 482 C 467 482 405 482 700 482;M 190 720 V 575 C 190 557 218 540 241 557 L 310 647 V 547 M 227 720 V 620 L 296 710 C 319 728 347 710 347 693 V 548M 433 551 H 478 C 493 551 508 566 508 581 V 664 C 510 746 368 746 366 664M 433 588 H 458 C 464 588 470 594 470 600 V 664 C 467 697 405 697 402 664" dur="1.5s" begin="reverseAnimation.begin" fill="freeze" calcMode="linear" />
+      <animate attributeName="stroke-width" values="80;13" dur="1.5s" begin="reverseAnimation.begin" fill="freeze" calcMode="linear" />
+    </path>
+    <path id="light2" d="M 527.5 551 H 672.5 M 527.5 588 H 571 C 576 588 581 593 581 598 V 720M 619.5 720 V 598 C 619.5 593 624.5 588 629.5 588 H 673M 733 551 H 763 C 858 566 858 705 778 726 H 728 C 693 726 693 726 693 691 V 586 C 693 551 693 551 733 551 M 743 589 H 748 C 813 594 816 688 743 683 H 738 C 734 683 734 683 734 679 V 593 C 734 589 734 589 743 589" strokeWidth="0" >
+      <animate attributeName="stroke-dasharray" values="0% 100%;100% 0%" dur="3.5s" begin="meAnim.end-1s" fill="freeze" calcMode="linear" />
+      <animate attributeName="stroke-width" from="0" to="13" dur="1.5s" begin="meAnim.end-1.5s" fill="freeze" calcMode="linear" />
+      <animate attributeName="d" values="M 527.5 551 H 672.5 M 527.5 588 H 571 C 576 588 581 593 581 598 V 720 M 619.5 720 V 598 C 619.5 593 624.5 588 629.5 588 H 673M 733 551 H 763 C 858 566 858 705 778 726 H 728 C 693 726 693 726 693 691 V 586 C 693 551 693 551 733 551 M 743 589 H 748 C 813 594 816 688 743 683 H 738 C 734 683 734 683 734 679 V 593 C 734 589 734 589 743 589; M 319 602 H 700 M 319 602 H 700 C 700 602 700 602 700 602 V 602 M 319 602 V 602 C 319 602 319 602 319 602 H 700M 319 722 H 351 C 351 722 351 722 351 722 H 700 C 700 722 700 722 700 722 V 722 C 700 722 700 722 700 722 M 319 722 H 700 C 700 722 700 722 700 722 H 700 C 700 722 700 722 700 722 V 722 C 700 722 700 722 700 722" dur="1.5s" begin="startAnimation.begin" fill="freeze" calcMode="linear" />
+      <animate attributeName="stroke-width" values="13;80" dur="1.5s" begin="startAnimation.begin" fill="freeze" calcMode="linear" />
+      <animate attributeName="d" values="M 319 602 H 700 M 319 602 H 700 C 700 602 700 602 700 602 V 602M 319 602 V 602 C 319 602 319 602 319 602 H 700M 319 722 H 351 C 351 722 351 722 351 722 H 700 C 700 722 700 722 700 722 V 722 C 700 722 700 722 700 722M 319 722 H 700 C 700 722 700 722 700 722 H 700 C 700 722 700 722 700 722 V 722 C 700 722 700 722 700 722;M 527.5 551 H 672.5 M 527.5 588 H 571 C 576 588 581 593 581 598 V 720 M 619.5 720 V 598 C 619.5 593 624.5 588 629.5 588 H 673M 733 551 H 763 C 858 566 858 705 778 726 H 728 C 693 726 693 726 693 691 V 586 C 693 551 693 551 733 551M 743 589 H 748 C 813 594 816 688 743 683 H 738 C 734 683 734 683 734 679 V 593 C 734 589 734 589 743 589" dur="1.5s" begin="reverseAnimation.begin" fill="freeze" calcMode="linear" />
+      <animate attributeName="stroke-width" values="80;13" dur="1.5s" begin="reverseAnimation.begin" fill="freeze" calcMode="linear" />
+    </path>
+  </g>
+  <circle cx="512" cy="512" r="512" stroke="none" fill="transparent">
+    <animate id="startAnimation" attributeName="r" from="512" to="0" dur="0.001s" begin="click" fill="freeze" calcMode="linear" />
+    <animate attributeName="r" from="0" to="512" dur="0.001s" begin="reverseAnimation.begin" fill="freeze" calcMode="linear" />
+  </circle>
+  <circle cx="512" cy="512" r="0" stroke="none" fill="transparent">
+    <animate attributeName="r" from="0" to="512" dur="0.001s" begin="startAnimation.begin" fill="freeze" calcMode="linear" />
+    <animate id="reverseAnimation" attributeName="r" from="512" to="0" dur="0.001s" begin="click" fill="freeze" calcMode="linear" />
+  </circle>
+</svg>

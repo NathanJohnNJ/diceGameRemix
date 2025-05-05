@@ -1,3 +1,4 @@
+import wall from './images/wall.jpeg';
 import bottle1 from './images/1.png';
 import bottle2 from './images/2.png';
 import bottle3 from './images/3.png';
@@ -38,6 +39,7 @@ const Wall = (props) => {
     }
     function smashBottles(){
         for(let i=0; i<props.bottles; i++){
+            const wall = document.getElementById("wall")
             const sources = [smash, leftSmash, rightSmash]
             const num = Math.floor(Math.random()*3)
             const imgSrc = sources[num]
@@ -46,22 +48,21 @@ const Wall = (props) => {
             image.src=imgSrc
             image.alt="Smashed bottle"
             image.className="smash"
-            image.style={transform:`translateX(${x})`}
+            image.style.transform = `translateX(${x}px)`
             area.firstChild.remove()
-            area.appendChild(image)
+            wall.appendChild(image)
         }
     }
     
-    return(
-        <div className="wallDiv">
-            <div className="wall">
-                <div className="wallBottles" id="wallBottles"></div>
-            </div>
-            <div className="wallTextDiv">
-                <p className="wallText">{props.bottles} green bottles standing on the wall. And if 1 green bottle should accidentally fall...</p>
-            </div>
-        </div>
-    )
+  return( 
+      <figure className="wall" id="wall">
+        <img src={wall} alt="A wall" className="wallImg" />
+        <div className="wallBottles" id="wallBottles"></div>            
+        <figcaption className="wallText">
+          <strong><span className="count">{props.bottles}</span> green bottles standing on the wall. And if 1 green bottle should accidentally fall...</strong>
+        </figcaption>
+      </figure>
+  )
 };
 
 export default Wall;
